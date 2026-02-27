@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fff5f8, #ffe6f0);
+  color: #222;
+  opacity: 1;
+}
+
+.page {
+  max-width: 900px;
+  padding: 60px;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.big-number {
+  font-size: 200px;
+  font-weight: bold;
+  color: #ff2e63;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 32px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 30px;
+  line-height: 1.6;
+  margin: 25px 0;
+}
+
+button {
+  margin-top: 50px;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #ff2e63;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e6004c;
+  transform: scale(1.05);
+}
+
+/* FINAL SURPRISE PAGE */
+.surprise {
+  background: black;
+  color: white;
+}
+
+.surprise h1 {
+  font-size: 60px;
+  opacity: 0;
+  animation: reveal 3s ease forwards;
+}
+
+.surprise p {
+  font-size: 28px;
+  opacity: 0;
+  animation: reveal 3s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes reveal {
+  to { opacity: 1; }
+}
